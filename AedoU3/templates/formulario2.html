@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+</head>
+<body>
+<div class="container">
+    <form action="/ejercicio2" method="POST">
+        Nombre 1: <input type="text" name="nombre1" required><br>
+        Nombre 2: <input type="text" name="nombre2" required><br>
+        Nombre 3: <input type="text" name="nombre3" required><br>
+        <button type="submit">Enviar</button>
+    </form>
+    {% if longitud %}
+    <div>
+        <h1>Resultado</h1>
+    <p>El nombre más largo es: {{ nombre_largo }} ({{ longitud }} caracteres)</p>
+    </div>
+    {% endif %}
+</div>
+</body>
+</html>
